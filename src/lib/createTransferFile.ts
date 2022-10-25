@@ -1,10 +1,11 @@
-"use strict"
+"use strict";
 
 import * as process from "child_process";
 import { v4 as uuidv4 } from "uuid";
 import log from "./logger";
 
-export default function createTransferFile(size: string) { // 1gb, 500mb, etc
+export default function createTransferFile(size: string) {
+  // fallocate docs for accepted sizes, G for GB
   let name = uuidv4();
 
   process.exec(

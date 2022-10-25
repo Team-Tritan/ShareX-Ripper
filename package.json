@@ -1,7 +1,8 @@
 {
-  "name": "motz",
+  "name": "sharex-ripper",
   "version": "1.0.0",
-  "description": "",
+  "description": "fuck you",
+  "author": "<github/dylanjamesdev>",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
