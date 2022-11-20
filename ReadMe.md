@@ -2,7 +2,7 @@
 
 This tool was designed specifically to prove a flaw in many open source ShareX image hosts.
 
-[RedactedDev] and [RedactedDev] have figured out a way to null specific unnamed ShareX servers due to reasons that are native to with the way node handles file uploads.
+[x] figured out a way to null specific unnamed ShareX servers due to reasons that are native to with the way node handles file uploads.
 
 Uploads need to be routed somewhere and typically are held in ram for some time during the upload process until the files are entirely uploaded and ready to be written to the disk. With that being said, this attack tool takes advantage of that by initiating a post for a handful of 1gb files at 1gbps speeds. When the server is fed multiple files of this nature, it stores them all in ram which will effectively cause a drive fault because docker will allow node to continue over-allocating ram.
 
