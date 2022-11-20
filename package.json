@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd src && nodemon index.ts"
   },
-  "license": "ISC",
   "dependencies": {
     "@types/node": "^18.11.2",
     "@types/uuid": "^8.3.4",
